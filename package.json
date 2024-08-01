@@ -1,0 +1,18 @@
+{
+  "name": "playwright-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "debugLastFailedTest" : "npx playwright test --last-failed --debug",
+    "dummyTests"       : "npx playwright test --project chromium --grep '@dummyTag'",
+    "mobileTests"      : "npx playwright test --project \"Mobile Chrome\" --project \"Mobile Safari\""
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "@types/node": "^22.0.2"
+  }
+}
