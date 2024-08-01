@@ -27,7 +27,12 @@ The project includes several npm scripts to facilitate running tests. Here are t
         ***npm run dummyTests***
    - Use this to quickly run a subset of tests that are marked as dummy tests.
 
-3. **Run Mobile Tests**
+3. **Run Desktop Tests**
+   - This script runs tests for the desktop `chromium`, `firefox` and `webkit` projects:</br>
+        ***npm run desktopTests***
+   - This is useful for testing on desktop browser configurations.
+
+4. **Run Mobile Tests**
    - This script runs tests for both `Mobile Chrome` and `Mobile Safari` projects:</br>
         ***npm run mobileTests***
    - This is useful for testing on mobile browser configurations.
