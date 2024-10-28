@@ -17,7 +17,7 @@ export class QmMainPage {
       }
 
       async goto() {
-        await this.page.goto('https://www.qualityminds.de');
+        await this.page.goto(process.env.URL!);
         await this.btnDeclineCookies.click();
       }
 

@@ -15,6 +15,11 @@ This project is a skeleton setup for Playwright, including examples for core fun
 
 Run all Tests for all projects via ***npx playwright test***
 
+The ***dotenv*** and ***cross-env*** packages are now used, for dynamic loading of env files. The default env loaded when no env is provided is `/env/.env.prod`.
+
+A different env can be provided by `npx cross-env ENV=<name> <runTests>`.
+This command should work on all machines and environments.
+
 The project includes several npm scripts to facilitate running tests. Here are the available shortcuts:
 
 1. **Run Debug Last Failed Test**

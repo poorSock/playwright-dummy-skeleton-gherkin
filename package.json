@@ -7,13 +7,15 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "debugLastFailedTest" : "npx playwright test --last-failed --debug",
-    "dummyTests"          : "npx playwright test --project chromium --grep \"@dummyTag\"",
-    "desktopTests"        : "npx playwright test --project chromium --project firefox --project webkit",
-    "mobileTests"         : "npx playwright test --project \"Mobile Chrome\" --project \"Mobile Safari\""
+    "debugLastFailedTest": "npx playwright test --last-failed --debug",
+    "dummyTests": "npx playwright test --project chromium --grep \"@dummyTag\"",
+    "desktopTests": "npx playwright test --project chromium --project firefox --project webkit",
+    "mobileTests": "npx playwright test --project \"Mobile Chrome\" --project \"Mobile Safari\""
   },
   "devDependencies": {
+    "@dotenvx/dotenvx": "^1.21.0",
     "@playwright/test": "^1.45.3",
-    "@types/node": "^22.0.2"
+    "@types/node": "^22.0.2",
+    "cross-env": "^7.0.3"
   }
 }
