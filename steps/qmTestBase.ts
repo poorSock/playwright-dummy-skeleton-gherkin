@@ -1,6 +1,6 @@
-import { test as base, expect } from '@playwright/test';
-import { QmMainPage } from './pages/qm_main.page';
-import { QmKontaktPage } from './pages/qm_kontakt.page';
+import { test as base, createBdd } from 'playwright-bdd';
+import { QmMainPage } from '../pages/qm_main.page';
+import { QmKontaktPage } from '../pages/qm_kontakt.page';
 
 // Declare the types of your fixtures.
 type PageFixtures = {
@@ -19,4 +19,5 @@ export const test = base.extend<PageFixtures>({
     }
 });
 
+export const { Given, When, Then } = createBdd(test);
 export { expect } from '@playwright/test';

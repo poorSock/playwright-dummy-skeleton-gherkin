@@ -1,6 +1,6 @@
 # Playwright Dummy Project / Skeleton
 
-This project is a skeleton setup for Playwright, including examples for core functionalities such as page objects, fixtures, and tags/annotations. Follow the instructions below to set up and run the tests.
+This project is a skeleton setup for Playwright with gherkin, including examples for core functionalities such as page objects, fixtures, and tags/annotations. Follow the instructions below to set up and run the tests.
 
 ## Prerequisites
 
@@ -13,12 +13,13 @@ This project is a skeleton setup for Playwright, including examples for core fun
 
 ## Running Tests
 
-Run all Tests for all projects via ***npx playwright test***
+Run all Tests for all projects via ***npx bddgen && npx playwright test***
 
 The ***dotenv*** and ***cross-env*** packages are now used, for dynamic loading of env files. The default env loaded when no env is provided is `/env/.env.prod`.
 
 A different env can be provided by `npx cross-env ENV=<name> <runTests>`.
 This command should work on all machines and environments.
+Example: `npx cross-env ENV=local npm run dummyTests`
 
 The project includes several npm scripts to facilitate running tests. Here are the available shortcuts:
 
@@ -47,3 +48,4 @@ The project includes several npm scripts to facilitate running tests. Here are t
 - **Page Objects**: The project follows the page object model to organize and manage page-specific code.
 - **Fixtures**: Fixtures are used to set up the test environment, providing reusable data and context for tests.
 - **Tags/Annotations**: Tags are used to categorize and selectively run tests.
+- **Gherkin**: The playwright-bdd package is used for gherkin style testcases. The package converts scenarios to playwright testcases, so the features of the powerful playwright testrunner are kept! The generated testcases can be found in the `.features-gen` dir.
